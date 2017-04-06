@@ -11,18 +11,16 @@
   </div>
 
   <div class="col-md-9 programmer-info">
-
-    <p>
+    <%= render partial: 'attribute', locals: {programmer: @programmer} %>
+    <!-- <p>
     <strong>Home Country:</strong> <%= @programmer.home_country %><br>
     </p>
-
     <p>
     <strong>Quote:</strong> <%= @programmer.quote %><br>
     </p>
-
     <p>
     <strong>Claim To Fame:</strong> <%= @programmer.claim_to_fame %>
-    </p>
+    </p> -->
 
     <p>
     <%= link_to "Learn more about #{@programmer.name}", @programmer.wikipedia_page, target: '_blank' %>
@@ -30,4 +28,3 @@
 
   </div>
 </div>
-
